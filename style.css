@@ -1,0 +1,57 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Homepage background gradient */
+body.home {
+  background: linear-gradient(135deg, #007BFF, #6f42c1); /* Blue → Purple */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Big Title */
+.title {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+}
+
+/* Menu grid layout */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* Game buttons */
+.game-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+  min-height: 80px;
+}
+
+.game-btn:hover {
+  background: darkgreen;
+  transform: scale(1.05);
+}
