@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack-a-Mole</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 15px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    .hole {
+      width: 100px;
+      height: 100px;
+      background: #7f8c8d;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 40px;
+      color: transparent;
+    }
+    .hole.active {
+      background: #2ecc71;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>🦫 Whack-a-Mole</h2>
+    <div id="score">Score: 0</div>
+    <div id="game-board"></div>
+    <button onclick="restart()" class="game-btn">Restart</button>
+    <br><br>
+    <a class="back" href="index.html">⬅ Back to Menu</a>
+  </div>
+
+  <script src="whack.js"></script>
+</body>
+</html>
