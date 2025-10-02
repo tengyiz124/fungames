@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .choices {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      gap: 15px;
+    }
+    .choice-btn {
+      font-size: 40px;
+      padding: 15px 25px;
+      background: #27ae60;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+    }
+    .choice-btn:hover {
+      background: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>✊ ✋ ✌️ Rock, Paper, Scissors</h2>
+    <div class="choices">
+      <button class="choice-btn" onclick="play('rock')">✊</button>
+      <button class="choice-btn" onclick="play('paper')">✋</button>
+      <button class="choice-btn" onclick="play('scissors')">✌️</button>
+    </div>
+    <p id="result">Make your choice!</p>
+    <button onclick="restart()" class="game-btn">Restart</button>
+    <br><br>
+    <a class="back" href="index.html">⬅ Back to Menu</a>
+  </div>
+
+  <script src="rps.js"></script>
+</body>
+</html>
