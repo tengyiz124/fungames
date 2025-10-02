@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dino Runner</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #gameCanvas {
+      background: #ecf0f1;
+      border: 2px solid #2c3e50;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>🦖 Dino Runner</h2>
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas" width="600" height="200"></canvas>
+    <p class="small-info">Press SPACE or ↑ to jump</p>
+    <button onclick="restart()" class="game-btn">Restart</button>
+    <br><br>
+    <a class="back" href="index.html">⬅ Back to Menu</a>
+  </div>
+
+  <script src="dino.js"></script>
+</body>
+</html>
