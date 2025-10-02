@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #simonBoard {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-template-rows: repeat(2, 150px);
+      gap: 10px;
+      margin: 20px auto;
+    }
+    .colorBtn {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    .green { background: #2ecc71; }
+    .red { background: #e74c3c; }
+    .blue { background: #3498db; }
+    .yellow { background: #f1c40f; }
+    .active { opacity: 1; box-shadow: 0 0 20px white; }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>🎵 Simon Game</h2>
+    <div id="score">Round: 0</div>
+    <div id="simonBoard">
+      <div id="green" class="colorBtn green"></div>
+      <div id="red" class="colorBtn red"></div>
+      <div id="blue" class="colorBtn blue"></div>
+      <div id="yellow" class="colorBtn yellow"></div>
+    </div>
+    <p class="small-info">Repeat the sequence by clicking the colors!</p>
+    <button onclick="startGame()" class="game-btn">Start</button>
+    <button onclick="restart()" class="game-btn">Restart</button>
+    <br><br>
+    <a class="back" href="index.html">⬅ Back to Menu</a>
+  </div>
+
+  <script src="simon.js"></script>
+</body>
+</html>
