@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+      margin: 20px auto;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      background: white;
+      font-size: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 8px;
+      color: black;
+    }
+    .status {
+      font-size: 24px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>❌⭕ Tic Tac Toe</h2>
+    <div class="status" id="status">Player X's turn</div>
+    <div class="board" id="board"></div>
+    <button onclick="restart()" class="game-btn">Restart</button>
+    <br><br>
+    <a class="back" href="index.html">⬅ Back to Menu</a>
+  </div>
+
+  <!-- external script -->
+  <script src="tic.js"></script>
+</body>
+</html>
