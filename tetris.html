@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #tetrisCanvas {
+      background: #111;
+      border: 3px solid #2c3e50;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>🟦 Tetris</h2>
+    <div id="score">Score: 0</div>
+    <canvas id="tetrisCanvas" width="200" height="400"></canvas>
+    <p class="small-info">Controls: ← → (move), ↑ (rotate), ↓ (drop)</p>
+    <button onclick="restart()" class="game-btn">Restart</button>
+    <br><br>
+    <a class="back" href="index.html">⬅ Back to Menu</a>
+  </div>
+
+  <script src="tetris.js"></script>
+</body>
+</html>
